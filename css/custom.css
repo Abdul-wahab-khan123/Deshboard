@@ -26,13 +26,13 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #8d1c05;
+    background: #2387e9;
     border-radius: 10px;
 }
 
-::-webkit-scrollbar-thumb:hover {
+/* ::-webkit-scrollbar-thumb:hover {
     background: #151C22;
-}
+} */
 
 figure {
     margin: 0;
@@ -121,7 +121,7 @@ p::first-letter {
 .sidebarSec.collapsed .side-main .logo-side .toggler{
     text-align: center;
 }
-.sidebarSec .side-main .logo-side .toggler i{}
+
 .sidebarSec .side-main .side-box{
     height: 85%;
     overflow-y: scroll;
@@ -187,7 +187,7 @@ p::first-letter {
 /* footer */
 .footer{
     overflow: hidden;
-    background-color: #7779790f;
+    background-color: #000000;
     width: 80%;
     position: fixed;
     bottom: 0;
@@ -198,7 +198,7 @@ p::first-letter {
 .footer.collapsed{
     width: 95%;
 }
-.footer .foot-content{}
+
 .footer .foot-content ul{
     display: flex;
     align-items: center;
@@ -207,8 +207,51 @@ p::first-letter {
 .footer .foot-content ul li{
     font-size: 17px;
     font-weight: 400;
+    color: #fff;
 }
 
+
+
+
+/* Table css */
+
+section.basic-datatables {
+    position: absolute;
+    overflow: hidden;
+    padding: 100px 0px;
+    width: 80%;
+    right: 0;
+}
+.basic-datatables .table-main{}
+.basic-datatables .table-main .heads{
+    background-color: #fff;
+    border-bottom: 1px solid #e9ebec;
+    border-radius: 5px 5px 0px 0px;
+    padding: 10px 20px;
+}
+.basic-datatables .table-main h2{
+    font-size: 20px;
+    font-weight: 500;
+    color: #535557;
+}
+.basic-datatables .table-main .table-box{
+    background-color: #fff;
+    padding: 20px 20px;
+    border-radius: 0px 0px 5px 5px;
+}
+.basic-datatables .table-main .table-box .head{
+    font-size: 14px;
+    font-weight: 700;
+}
+.table-box table, tr, td {
+    border: 1px solid #d0d0d0;
+    padding: 7px 0px 7px 12px;
+    font-size: 14px;
+    color: #000;
+}
+table.dataTable thead > tr > th.dt-orderable-asc, table.dataTable thead > tr > th.dt-orderable-desc, table.dataTable thead > tr > td.dt-orderable-asc, table.dataTable thead > tr > td.dt-orderable-desc {
+    border: 1px solid #d0d0d0;
+}
 /* product-detail */
 /*********************** inner-page css Close ***********************/
 
