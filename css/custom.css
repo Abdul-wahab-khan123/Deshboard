@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Teko:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #f3f3f9;
+}
+
+main {
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #8d1c05;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #151C22;
+}
+
+figure {
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    color: #2D2D2D;
+    font-size: 15px;
+    line-height: 25px;
+    text-transform: unset;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+}
+
+p::first-letter {
+    text-transform: capitalize;
+}
+
+
+/* sidebar-sec */
+
+.sidebarSec{
+    overflow: hidden;
+    position: fixed;
+    background-color: #003366;
+    width: 20%;
+    top: 0;
+    bottom: 0;
+    padding: 0px 14px 0px 14px;
+    height: 100%;
+    transition: all .5s ease-in-out;
+}
+.sidebarSec.collapsed{
+    width: 5%;
+    padding: 10px 10px;
+}
+.sidebarSec .side-main{
+    height: 100%;
+}
+.sidebarSec .side-main .logo-side{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 15%;
+    margin: 0;
+    padding: 0;
+}
+.sidebarSec .side-main .logo-side img{
+    min-width: 60%;
+    max-width: 60%;
+    min-height: 40px;
+    max-height: 40px;
+    object-fit: contain;
+}
+.sidebarSec.collapsed .side-main .logo-side img{
+    display: none;
+}
+.sidebarSec .side-main .logo-side .toggler{
+    width: 45px;
+    height: 45px;
+    background-color: #ffd700;
+}
+.sidebarSec.collapsed .side-main .logo-side .toggler{
+    text-align: center;
+}
+.sidebarSec .side-main .logo-side .toggler i{}
+.sidebarSec .side-main .side-box{
+    height: 85%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.sidebarSec .side-main .side-box .side-box-ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px;
+}
+.sidebarSec .side-main .side-box .side-box-ul h4{
+    color: #ffd700;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 9px 0px;
+}
+.sidebarSec .side-main .side-box .side-box-ul .side-box-li a.active{
+    background-color: #ffd700;
+    color: #003366;
+    width: 100%;
+}
+.sidebarSec .side-main .side-box .side-box-ul .side-box-li{
+    transition: all .5s ease-in-out;
+    width: 100%;
+}
+.sidebarSec .side-main .side-box .side-box-ul .side-box-li a{
+    font-size: 17px;
+    color: #fff;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    padding: 10px 11px;
+}
+.sidebarSec.collapsed .side-main .side-box .side-box-ul .side-box-li a span{
+    display: none;
+}
+.sidebarSec .side-main .side-box .side-box-ul .side-box-li a i {
+    font-size: 22px;
+    margin: 0px 10px 0px 0px;
+}
+
+/* header */
+
+.header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80%;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+}
+.header.collapsed{
+    width: 95%;
+}
+.header .nav-head{
+    background-color: #fff;
+    padding: 14px 20px;
+}
+
+/* footer */
+.footer{
+    overflow: hidden;
+    background-color: #7779790f;
+    width: 80%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 14px 20px;
+    transition: all .5s ease-in-out;
+}
+.footer.collapsed{
+    width: 95%;
+}
+.footer .foot-content{}
+.footer .foot-content ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer .foot-content ul li{
+    font-size: 17px;
+    font-weight: 400;
+}
+
+/* product-detail */
+/*********************** inner-page css Close ***********************/
+
+
+@media only screen and (min-width: 1600px) and (max-width: 1920px) {}
+
+@media only screen and (min-width: 1445px) and (max-width: 1599px) {}
+
+@media only screen and (min-width: 1400px) and (max-width: 1444px) {}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {}
+
+@media only screen and (min-width: 300px) and (max-width: 575px) {}
