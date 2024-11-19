@@ -252,6 +252,9 @@ section.basic-datatables {
 table.dataTable thead > tr > th.dt-orderable-asc, table.dataTable thead > tr > th.dt-orderable-desc, table.dataTable thead > tr > td.dt-orderable-asc, table.dataTable thead > tr > td.dt-orderable-desc {
     border: 1px solid #d0d0d0;
 }
+.dt-length label {
+    margin: 0px 0px 0px 5px;
+}
 /* product-detail */
 /*********************** inner-page css Close ***********************/
 

@@ -11,7 +11,7 @@ toggler.addEventListener("click", () =>{
 
 
 sideBox = document.querySelector(".side-box").querySelectorAll("a")
-// console.log(sideBox);
+console.log(sideBox);
 
 sideBox.forEach(element =>{
     element.addEventListener("click", function(){
