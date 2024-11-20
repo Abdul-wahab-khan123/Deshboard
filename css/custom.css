@@ -77,7 +77,7 @@ p::first-letter {
 
 /* sidebar-sec */
 
-.sidebarSec{
+.sidebarSec {
     overflow: hidden;
     position: fixed;
     background-color: #003366;
@@ -88,14 +88,17 @@ p::first-letter {
     height: 100%;
     transition: all .5s ease-in-out;
 }
-.sidebarSec.collapsed{
+
+.sidebarSec.collapsed {
     width: 5%;
     padding: 10px 10px;
 }
-.sidebarSec .side-main{
+
+.sidebarSec .side-main {
     height: 100%;
 }
-.sidebarSec .side-main .logo-side{
+
+.sidebarSec .side-main .logo-side {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -103,54 +106,63 @@ p::first-letter {
     margin: 0;
     padding: 0;
 }
-.sidebarSec .side-main .logo-side img{
+
+.sidebarSec .side-main .logo-side img {
     min-width: 60%;
     max-width: 60%;
     min-height: 40px;
     max-height: 40px;
     object-fit: contain;
 }
-.sidebarSec.collapsed .side-main .logo-side img{
+
+.sidebarSec.collapsed .side-main .logo-side img {
     display: none;
 }
-.sidebarSec .side-main .logo-side .toggler{
+
+.sidebarSec .side-main .logo-side .toggler {
     width: 45px;
     height: 45px;
     background-color: #ffd700;
 }
-.sidebarSec.collapsed .side-main .logo-side .toggler{
+
+.sidebarSec.collapsed .side-main .logo-side .toggler {
     text-align: center;
 }
 
-.sidebarSec .side-main .side-box{
+.sidebarSec .side-main .side-box {
     height: 85%;
     overflow-y: scroll;
     overflow-x: hidden;
 }
-.sidebarSec .side-main .side-box .side-box-ul{
+
+.sidebarSec .side-main .side-box .side-box-ul {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     gap: 8px;
 }
-.sidebarSec .side-main .side-box .side-box-ul h4{
+
+.sidebarSec .side-main .side-box .side-box-ul h4 {
     color: #ffd700;
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 600;
     margin: 9px 0px;
 }
-.sidebarSec .side-main .side-box .side-box-ul .side-box-li a.active{
+
+.sidebarSec .side-main .side-box .side-box-ul .side-box-li a.active {
     background-color: #ffd700;
     color: #003366;
     width: 100%;
 }
-.sidebarSec .side-main .side-box .side-box-ul .side-box-li{
+
+.sidebarSec .side-main .side-box .side-box-ul .side-box-li {
     transition: all .5s ease-in-out;
     width: 100%;
 }
-.sidebarSec .side-main .side-box .side-box-ul .side-box-li a{
+
+.sidebarSec .side-main .side-box .side-box-ul .side-box-li a {
     font-size: 17px;
     color: #fff;
     font-weight: 400;
@@ -158,34 +170,46 @@ p::first-letter {
     align-items: center;
     padding: 10px 11px;
 }
-.sidebarSec.collapsed .side-main .side-box .side-box-ul .side-box-li a span{
+
+.sidebarSec.collapsed .side-main .side-box .side-box-ul .side-box-li a span {
     display: none;
 }
+
 .sidebarSec .side-main .side-box .side-box-ul .side-box-li a i {
     font-size: 22px;
     margin: 0px 10px 0px 0px;
 }
 
+/* sidebar-sec css end */
+
+
+
 /* header */
 
-.header{
+.header {
     position: fixed;
     top: 0;
     right: 0;
     width: 80%;
     overflow: hidden;
+    z-index: 9999;
     transition: all .5s ease-in-out;
 }
-.header.collapsed{
+
+.header.collapsed {
     width: 95%;
 }
-.header .nav-head{
+
+.header .nav-head {
     background-color: #fff;
     padding: 14px 20px;
 }
 
+/* header css end*/
+
+
 /* footer */
-.footer{
+.footer {
     overflow: hidden;
     background-color: #000000;
     width: 80%;
@@ -195,21 +219,24 @@ p::first-letter {
     padding: 14px 20px;
     transition: all .5s ease-in-out;
 }
-.footer.collapsed{
+
+.footer.collapsed {
     width: 95%;
 }
 
-.footer .foot-content ul{
+.footer .foot-content ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.footer .foot-content ul li{
+
+.footer .foot-content ul li {
     font-size: 17px;
     font-weight: 400;
     color: #fff;
 }
 
+/* footer css end*/
 
 
 
@@ -222,43 +249,119 @@ section.basic-datatables {
     width: 80%;
     right: 0;
 }
-.basic-datatables .table-main{}
-.basic-datatables .table-main .heads{
+
+.basic-datatables .table-main .heads {
     background-color: #fff;
     border-bottom: 1px solid #e9ebec;
     border-radius: 5px 5px 0px 0px;
     padding: 10px 20px;
 }
-.basic-datatables .table-main h2{
+
+.basic-datatables .table-main h2 {
     font-size: 20px;
     font-weight: 500;
     color: #535557;
 }
-.basic-datatables .table-main .table-box{
+
+.basic-datatables .table-main .table-box {
     background-color: #fff;
     padding: 20px 20px;
     border-radius: 0px 0px 5px 5px;
 }
-.basic-datatables .table-main .table-box .head{
+
+.basic-datatables .table-main .table-box .head {
     font-size: 14px;
     font-weight: 700;
 }
-.table-box table, tr, td {
+
+.table-box table,
+tr,
+td {
     border: 1px solid #d0d0d0;
     padding: 7px 0px 7px 12px;
     font-size: 14px;
     color: #000;
 }
-table.dataTable thead > tr > th.dt-orderable-asc, table.dataTable thead > tr > th.dt-orderable-desc, table.dataTable thead > tr > td.dt-orderable-asc, table.dataTable thead > tr > td.dt-orderable-desc {
+
+table.dataTable thead>tr>th.dt-orderable-asc,
+table.dataTable thead>tr>th.dt-orderable-desc,
+table.dataTable thead>tr>td.dt-orderable-asc,
+table.dataTable thead>tr>td.dt-orderable-desc {
     border: 1px solid #d0d0d0;
 }
+
 .dt-length label {
     margin: 0px 0px 0px 5px;
 }
-/* product-detail */
+/* Table css css end*/
+
+.form-sec{
+    overflow: hidden;
+    padding: 100px 0px;
+    position: absolute;
+    right: 0;
+    width: 80%;
+    top: 0;
+}
+.form-sec .form-box{
+    background-color: #fff;
+    padding: 20px 30px;
+}
+.form-sec .form-box .details{
+    padding: 0px 0px 15px;
+}
+.form-sec .form-box .details label{
+    font-size: 16px;
+    margin: 0px 0px 5px;
+}
+.form-sec .form-box .details input{}
+
+.form-control:focus{
+    box-shadow:none;
+}
+
+
+/* product-sec */
+
+.product-sec{
+    position: absolute;
+    width: 80%;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+    padding: 100px 0px;
+}
+.product-sec .product-content{}
+.product-sec .product-content{}
+.product-sec .product-content p{}
+.product-sec .product-content h1{
+    font-size: 30px;
+    margin: 0px 0px 10px;
+    font-weight: 600;
+}
+.product-sec .product-content h4{}
+.product-sec .product-content input{}
+.product-sec .product-content a{}
+.product-sec .product-content h3{}
+.product-sec .product-content p{
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;
+    margin: 0px 0px 5px;
+}
+.product-sec .small-row-img{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 15px 0px 0px;
+}
+.product-sec .small-row-img .small-col-img{
+    flex-basis:25% ;
+    cursor: pointer;
+}
+
+
 /*********************** inner-page css Close ***********************/
-
-
 @media only screen and (min-width: 1600px) and (max-width: 1920px) {}
 
 @media only screen and (min-width: 1445px) and (max-width: 1599px) {}

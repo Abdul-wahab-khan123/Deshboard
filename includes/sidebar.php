@@ -12,7 +12,7 @@
         <div class="side-box">
             <ul class="side-box-ul">
                 <h4>Menu</h4>
-                <li class="side-box-li"><a href="javascript:;" class="active"><i class="fa-solid fa-gauge-high"></i>
+                <li class="side-box-li"><a href="index.php" class="active"><i class="fa-solid fa-gauge-high"></i>
                         <span>Dashsboards</span></a>
                 </li>
                 <li class="side-box-li"><a href="javascript:;"><i class="fa-solid fa-rocket"></i> <span>Apps</span></a>
@@ -37,11 +37,11 @@
                 </li>
                 <li class="side-box-li"><a href="javascript:;"><i class="fa-solid fa-bridge"></i>
                         <span>Widgets</span></a></li>
-                <li class="side-box-li"><a href="javascript:;"><i class="fa-solid fa-file-waveform"></i>
+                <li class="side-box-li"><a href="form.php"><i class="fa-solid fa-file-waveform"></i>
                         <span>Forms</span></a></li>
                 <li class="side-box-li"><a href="table.php"><i class="fa-solid fa-table"></i>
                         <span>Tables</span></a></li>
-                <li class="side-box-li"><a href="javascript:;"><i class="fa-solid fa-chart-gantt"></i>
+                <li class="side-box-li"><a href="product.php"><i class="fa-solid fa-chart-gantt"></i>
                         <span>Charts</span></a></li>
                 <li class="side-box-li"><a href="javascript:;"><i class="fa-solid fa-icons"></i>
                         <span>Icons</span></a></li>
